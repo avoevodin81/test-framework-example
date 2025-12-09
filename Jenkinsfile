@@ -37,6 +37,8 @@ pipeline {
                 script {
                     allure([
                         allureCmd: 'Allure',
+                        includeProperties: false,
+                        reportBuildPolicy: 'ALWAYS',
                         results: [[path: API_ALLURE_RESULTS]]
                     ])
                 }
