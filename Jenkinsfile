@@ -3,6 +3,7 @@ pipeline {
     environment {
         API_ALLURE_RESULTS = 'api-test/target/allure-results'
         MAVEN_TOOL = 'M3'
+        jdk 'JDK_21'
     }
 
     stages {
