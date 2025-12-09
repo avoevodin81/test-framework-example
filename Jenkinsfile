@@ -27,7 +27,7 @@ pipeline {
         stage('Test') {
             steps {
                 withMaven(maven: MAVEN_TOOL) {
-                    sh "mvn verify"
+                    sh "mvn verify -Dlogging=${LOGGING}"
                 }
             }
         }
