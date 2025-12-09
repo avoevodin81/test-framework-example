@@ -36,6 +36,7 @@ pipeline {
             steps {
                 script {
                     allure([
+                        allureCmd: 'Allure',
                         results: [[path: API_ALLURE_RESULTS]]
                     ])
                 }
